@@ -1,4 +1,3 @@
-
 " Le mapping des touches
 map <silent> q       mZ:call ToggleComment_toggle()<CR>`Z
 map <silent> <S-q>   mZ:call ToggleComment_comment()<CR>`Z
@@ -14,6 +13,8 @@ let s:comment_symbol = {
   \  'fortran'	:  'C',
   \  'matlab'	:  '%',
   \  'doctest'	:  '',
+  \  'r'	:  '#',
+  \  'ruby'	:  '#',
   \ }
 "  \  'rien'    :  '~',
 "  \  'python'	:  '#',
@@ -22,13 +23,13 @@ let s:comment_symbol = {
 "  \  'c'	:  '//',
 "  \ }
 
-" Indique les 'syntax' où la ligne doit rester inchangée 
+" Indique les 'syntax' oï¿½ la ligne doit rester inchangï¿½e 
 let s:comment_in_place = {
   \  'fortran'	:  1,
   \ }
 
-" Un séparateur pour le mode commande.
-" Il doit être différent de tous les 'comment symbol'
+" Un sï¿½parateur pour le mode commande.
+" Il doit ï¿½tre diffï¿½rent de tous les 'comment symbol'
 let s:sep1 = ','
 let s:sep2 = ':'
 let s:sep3 = ';'
